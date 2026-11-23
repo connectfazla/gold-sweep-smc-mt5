@@ -60,7 +60,7 @@ The broker holds the stop and the final target. The EA closes the TP1 and TP2 le
 - The Pine script fills at the close of the signal bar. The EA fills at market on the next tick.
 - ATR uses Pine's RMA smoothing, not MT5's built-in SMA ATR, so stops match the Pine numbers.
 - Not ported: chart drawings, the status table, and the VWAP trend method.
-- Exit state lives in memory. After a terminal or EA restart, an open trade keeps its broker-side stop and target, but partial exits, breakeven and the trail stop running for that trade.
+- Exit state lives in memory. After a terminal or EA restart, an open trade keeps its broker-side stop and target, but the EA no longer takes partial exits, moves it to breakeven or trails its stop.
 
 ## Disclaimer
 
